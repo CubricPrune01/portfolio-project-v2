@@ -1,42 +1,45 @@
 import React from 'react';
 import Logo from './LogoMakr2.png'
 // REACT FONTAWESOME IMPORTS
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faBars} from '@fortawesome/free-solid-svg-icons'
+// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+// import {faBars} from '@fortawesome/free-solid-svg-icons'
 
 const Navbar = () => {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-dark">
-          <div className="container">
-
-  <a className="navbar-brand" href="#"><img className='logo' src={Logo} alt="logo"/></a>
-  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <FontAwesomeIcon icon={faBars} style={{color:"#fff"}}/>
-      </button>
-
-      <div className="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul className="navbar-nav ml-auto">
-          <li className="nav-item active">
-          <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">About Me</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">Skills</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">Projects</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">Contact Me</a>
-        </li>
-      
-      </ul>
-    
-    </div>
-  </div>
-</nav>
+        <div className="navigation">
+          <ul>
+            <li>
+              <a href="#">
+                <span className="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                <span className="title">Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span className="icon"><i class="fa fa-user" aria-hidden="true"></i></span>
+                <span className="title">About Me</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span className="icon"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></span>
+                <span className="title">Skills</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span className="icon"><i class="fa fa-file-text" aria-hidden="true"></i></span>
+                <span className="title">Projects</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span className="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                <span className="title">Contact Me</span>
+              </a>
+            </li>
+          </ul>
+        </div>
     )
 }
 
